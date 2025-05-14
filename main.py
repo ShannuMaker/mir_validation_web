@@ -1,4 +1,5 @@
 import flet as ft
+import flet_web
 import urllib.request
 import json
 import psycopg2
@@ -539,4 +540,5 @@ def main(page: ft.Page):
 
     page.add(home_screen(page, set_api_link=load_tabs))
 
-ft.app(target=main)
+ft.app(target=main, view=ft.WEB_BROWSER)
+
